@@ -1,0 +1,25 @@
+{
+  "name": "refaktor-sc",
+  "version": "0.1.0",
+  "description": "Refaktör — Web3 invoice factoring smart contracts (Monad)",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:monadTestnet": "hardhat run scripts/deploy.ts --network monadTestnet",
+    "verify:monadTestnet": "hardhat verify --network monadTestnet"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.10",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
